@@ -1,0 +1,274 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+  line-height: 1.7;
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #64748b;
+}
+
+.hero p {
+  max-width: 700px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #475569;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.hero-btns a {
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-btns a:first-child {
+  background: #2563eb;
+  color: white;
+}
+
+.hero-btns a:last-child {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.hero-btns a:hover {
+  transform: translateY(-3px);
+}
+
+/* STATS */
+
+.stats {
+  display: flex;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.stats h3 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.stats p {
+  font-size: 0.95rem;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 90px 10%;
+}
+
+section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+}
+
+/* CARDS */
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* GRID */
+
+.project-grid,
+.achievement-grid,
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* TAGS */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tags span {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* PROJECT LINKS */
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.project-links a {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  background: #2563eb;
+  color: white;
+}
+
+/* TIMELINE */
+
+.timeline {
+  display: grid;
+  gap: 20px;
+}
+
+/* CONTACT */
+
+#contact p {
+  margin-bottom: 12px;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 40px;
+  text-align: center;
+  margin-top: 60px;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+}
+
+.focus-card{
+max-width:900px;
+margin:auto;
+padding:40px;
+border-radius:30px;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+}
+
+.focus-badge{
+display:inline-block;
+padding:8px 16px;
+border-radius:999px;
+background:rgba(255,255,255,.2);
+font-size:.8rem;
+margin-bottom:20px;
+}
+
+.focus-card h2{
+margin-bottom:20px;
+}
+
+.impact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.impact-card{
+padding:35px;
+background:white;
+border-radius:20px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.impact-card h3{
+font-size:3rem;
+background:linear-gradient(90deg,#2563eb,#7c3aed);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.impact-card p{
+margin-top:10px;
+}
